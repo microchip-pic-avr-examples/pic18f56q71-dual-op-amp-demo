@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f56q71-dual-op-amp-demo",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "PIC18F56Q71 DUAL OP AMP DEMO",
         "projectName": "pic18f56q71-dual-op-amp-demo",
         "shortDescription": "A demo based on the dual op amps on the q71, and their configurations within mcc.",
         "ide": {
@@ -19,12 +19,12 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC18F-Q_DFP",
+            "semverRange": "^1.20.405"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=5.3.7"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,7 +36,7 @@
                 "versionRange": "*"
             }
         },
-        "author": "Prasad Aradhya",
+        "author": "Dylan Turner",
         "peripherals": [],
         "keywords": [],
         "additionalData": {
