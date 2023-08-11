@@ -115,7 +115,7 @@ In this configuration, the OPA is configured as an inverting programmable gain a
 
 <img src="images/INVERT.png" width = "450"><br>
 
-<img src="images/OPA_InvertingGain.PNG" width = "300"><br>
+<img src="images/OPA_Inverting_Gain.PNG" width = "300"><br>
 
 ## Demonstration
 
