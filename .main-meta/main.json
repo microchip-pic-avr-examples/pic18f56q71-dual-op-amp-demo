@@ -37,8 +37,8 @@
             }
         },
         "author": "Dylan Turner",
-        "peripherals": [],
-        "keywords": [],
+        "peripherals": ["OPA", "UART"],
+        "keywords": ["Analog","User Interface","OPAMP","Click Board"],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",
