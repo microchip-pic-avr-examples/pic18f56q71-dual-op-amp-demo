@@ -4,7 +4,9 @@
 
 # PIC18F56Q71 DUAL OP AMP DEMO
 
-The PIC18F56Q71 has two op amp modules capable of multiple configurations. To demonstrate this we will be doing a project based on the original Operational Amplifier demo on the PIC18F16Q41, but will include both OP-AMP channels.
+1. The PIC18F56Q71 uses two multi-configurable Operational Amplifier (op amp) modules.
+2. A project including both OP AMP channels will be showcased in this demo, similar to the Operational Amplifier demo on the PIC18F16Q41.
+
 
 
 
@@ -30,15 +32,15 @@ The PIC18F56Q71 has two op amp modules capable of multiple configurations. To de
 - Proto Click ([proto-click](https://www.mikroe.com/proto-click)) with modifications
 
 ## Setup
-The PIC18F56Q71 is being used in this demonstration, as the microcontroller.
+In this example, PIC18F56Q71 is used as a microcontroller.
 
 <img src="images/PIC18F56Q71-BOARD.png" width = "600"><br>
 
-The Curiosity adapter board will be expanding the capabilities of the PIC MCU, and also give us easily adaptable Mikro BUS headers.
+The Curiosity Nano Adapter board enhances the capabilities of the PIC MCU, and provides the user with easily adaptable Mikro BUS headers.
 
 <img src="images/AdapterBoard.PNG" width = "600"><br>
 
-Finally we will be using a proto click to house our reference voltage potentiometers, status LEDs, logic switches, and a reset button.
+A PROTO Click will be used to house the voltage potentiometers, status LEDs, logic switches, and a reset button.
 
 <img src="images/PROTOCLICK.jpg" width = "300"><br>
 
@@ -58,7 +60,7 @@ This is the modified protoboard, which includes 4 potentiometers for practical r
 
 ## Operation
 
-The OPA configuration is determined based on the logic levels of Channel 1 pins (RC6, RC3), and Channel 2 pins (RC1, RC4). To select the OPA configuration, those pins should be set according to the table below. After setting the pins to match the desired OPA configuration, SW0 must then be pressed to update the OPA module configuration and resume operation. The PIC18F56Q71 operates in sleep mode with the OPA enabled when not being reconfigured.
+The op amp configuration is determined based on the logic levels of Channel 1 pins (RC6, RC3), and Channel 2 pins (RC1, RC4). To select the OPA configuration, set the pins according to the table below. After setting the pins to match the desired OPA configuration, SW0 must then be pressed to update the OPA module configuration and resume operation. The PIC18F56Q71 operates in Sleep mode with the OPA enabled when not being reconfigured.
 
 | RC6/RC3 | RC1/RC4 | Configuration                                 |  
 |   ---   |   ---   | ----------------------------------------------|
@@ -121,14 +123,14 @@ In this configuration, the OPA is configured as an inverting programmable gain a
 
 <img src="images/DEMO.gif" width = "600"><br>
 
-This shows channel 1 in configuration 3 (Non-Inverting Programmable Gain), and channel 2 in configuration 2 (Unity Gain Buffer). You can determine which configuration the device is currently on, by watching the status LEDs blink or by checking the Terminal.
+This shows channel 1 in configuration 3 (Non-Inverting Programmable Gain), and channel 2 in configuration 2 (Unity Gain Buffer). The user can determine which configuration the device is currently on, by watching the status LEDs blink or by checking the Terminal.
 
 ## Terminal Screen
 
 <img src="images/DEMO-INTRO.png" width = "450"><br>
 
-This is the screen you should be met with in your terminal on start/reset.
+This is the screen you will be met with in your terminal on start/reset.
 
 <img src="images/DEMO-PRESS.png" width = "450"><br>
 
-What you should see after SW0 is released, depending on your configurations.
+What you will see after SW0 is released, depending on your configurations.
