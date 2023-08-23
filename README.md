@@ -94,7 +94,7 @@ In this configuration, the OPA is configured as a unity gain buffer (voltage fol
 
 ### Configuration 3: Non-Inverting PGA
 
-In this configuration, the OPA is configured as a non-inverting programmable gain amplifier and uses the internal resistor ladder built into the OPA module. The positive input (OPAxIN+) and the output (OPAxOUT) of the OPA are connected to the corresponding I/O pins. The OPA is preconfigured with a gain of '4' using the internal resistor ladder. This gain can be changed by writing a different value to the GSEL bits of OPA1CON1 in the function named "void OPA_NonInverting(void)" located in "application.c".
+In this configuration, the OPA is configured as a non-inverting programmable gain amplifier and uses the internal resistor ladder built into the OPA module. The positive input (OPAxIN+) and the output (OPAxOUT) of the OPA are connected to the corresponding I/O pins. The OPA is preconfigured with a gain of '4' using the internal resistor ladder. This gain can be changed by writing a different value to the GSEL bits of OPA1CON1 in the function named ``void OPA_NonInverting(void)`` located in ``application.c``.
 
 | OPA    | Gain | Positive Input   | Output (OUT)  |
 | :----: | :--: | :--------------: | :-----------: |
@@ -107,7 +107,7 @@ In this configuration, the OPA is configured as a non-inverting programmable gai
 
 ### Configuration 4: Inverting PGA
 
-In this configuration, the OPA is configured as an inverting programmable gain amplifier  and used the internal resistor ladder built into the OPA module. The OPA is preconfigured with a gain of '3' using the internal resistor ladder. This gain can be changed by writing a different value to the GSEL bits of OPAxCON1 in the function named "void OPA_Inverting(void)" located in "application.c".
+In this configuration, the OPA is configured as an inverting programmable gain amplifier  and used the internal resistor ladder built into the OPA module. The OPA is preconfigured with a gain of '3' using the internal resistor ladder. This gain can be changed by writing a different value to the GSEL bits of OPAxCON1 in the function named ``void OPA_Inverting(void)`` located in ``application.c``.
 
 | OPA    | Gain | Positive Input   | Output (OUT)  |
 | :----: | :--: | :--------------: | :-----------: |
