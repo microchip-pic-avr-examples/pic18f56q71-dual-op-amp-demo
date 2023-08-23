@@ -122,7 +122,7 @@ In this configuration, the OPA is configured as an inverting programmable gain a
 
 <img src="images/DEMO.gif" width = "600"><br>
 
-This shows channel 1 in configuration 3 (Non-Inverting Programmable Gain), and channel 2 in configuration 2 (Unity Gain Buffer). The user can determine which configuration the device is currently on, by watching the status LEDs blink or by checking the Terminal.
+This shows channel 1 in configuration 3 (Non-Inverting Programmable Gain Amplifier), and channel 2 in configuration 2 (Unity Gain Buffer). The user can determine which configuration the device is currently on, by watching the status LEDs blink or by checking the Terminal.
 
 ## Terminal Screen
 
