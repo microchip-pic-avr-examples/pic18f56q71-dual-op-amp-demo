@@ -2,10 +2,9 @@
 
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# PIC18F56Q71 DUAL OP AMP DEMO
+# Demo for PIC18F56Q71 Dual Operational Amplifier (Op Amp)
 
-1. The PIC18F56Q71 uses two multi-configurable Operational Amplifier (op amp) modules.
-2. A project including both OP AMP channels will be showcased in this demo, similar to the Operational Amplifier demo on the PIC18F16Q41.
+This example shows the PIC18F56Q71 using two multi-configurable op amp modules. This project includes both op amp channels which is similar to the op amp demo on PIC18F16Q41.
 
 
 
@@ -36,7 +35,7 @@ In this example, PIC18F56Q71 is used as a microcontroller.
 
 <img src="images/PIC18F56Q71-BOARD.png" width = "600"><br>
 
-The Curiosity Nano Adapter board enhances the capabilities of the PIC MCU, and provides the user with easily adaptable Mikro BUS headers.
+The Curiosity Nano Adapter board enhances the capabilities of the PIC® MCU, and provides the user with easily adaptable mikroBUS™ headers.
 
 <img src="images/AdapterBoard.PNG" width = "600"><br>
 
@@ -53,7 +52,7 @@ A PROTO Click will be used to house the voltage potentiometers, status LEDs, log
 |:--------------------------------------------------:|:-------------------------------------------------:|
 |<img src="images/PROTO_FRONT.jpg" width = "250"><br>|<img src="images/PROTO_BACK.jpg" width = "250"><br>|
 
-This is the modified protoboard, which includes 4 potentiometers for practical reference voltages, 4 switches for logic, 2 LED's for the configuration statuses, and a reset button.
+This is the modified protoboard, which includes four potentiometers, four logic switches, two LEDs, and a reset button.
 
 <img src="images/CBA_PROTO.jpg" width = "600"><br>
 
@@ -62,12 +61,12 @@ This is the modified protoboard, which includes 4 potentiometers for practical r
 
 The op amp configuration is determined based on the logic levels of Channel 1 pins (RC6, RC3), and Channel 2 pins (RC1, RC4). To select the OPA configuration, set the pins according to the table below. After setting the pins to match the desired OPA configuration, SW0 must then be pressed to update the OPA module configuration and resume operation. The PIC18F56Q71 operates in Sleep mode with the OPA enabled when not being reconfigured.
 
-| RC6/RC3 | RC1/RC4 | Configuration                                 |  
-|   ---   |   ---   | ----------------------------------------------|
-|    0    |    0    | 1 - Connected directly to external pins       |
-|    0    |    1    | 2 - Unity Gain Buffer / Voltage Follower      |
-|    1    |    0    | 3 - Non-Inverting Programmable Gain Amplifier |
-|    1    |    1    | 4 - Inverting Programmable Gain Amplifier     |
+| RC6/RC3 | RC1/RC4 | Configuration                                       |  
+|   ---   |   ---   | ----------------------------------------------------|
+|    0    |    0    | 1 - Connected directly to external pins             |
+|    0    |    1    | 2 - Unity Gain Buffer / Voltage Follower            |
+|    1    |    0    | 3 - Non-Inverting Programmable Gain Amplifier (PGA) |
+|    1    |    1    | 4 - Inverting Programmable Gain Amplifier  (PGA)    |
 
 Please note that Weak Pull-ups are enabled on switch pins in this code example, so unless each pin is directly connected to ground they will read as logic '1' when setting up the OPA module configuration.
 
@@ -93,9 +92,9 @@ In this configuration, the OPA is configured as a unity gain buffer (voltage fol
 
 <img src="images/UNITY.png" width = "450"><br>
 
-### Configuration 3: Non-Inverting PGA (Programable Gain Amplifier)
+### Configuration 3: Non-Inverting PGA
 
-In this configuration, the OPA is configured as a non-inverting programmable gain amplifier (PGA) and uses the internal resistor ladder built into the OPA module. The positive input (OPAxIN+) and the output (OPAxOUT) of the OPA are connected to the corresponding I/O pins. The OPA is preconfigured with a gain of '4' using the internal resistor ladder. This gain can be changed by writing a different value to the GSEL bits of OPA1CON1 in the function named "void OPA_NonInverting(void)" located in "application.c".
+In this configuration, the OPA is configured as a non-inverting programmable gain amplifier and uses the internal resistor ladder built into the OPA module. The positive input (OPAxIN+) and the output (OPAxOUT) of the OPA are connected to the corresponding I/O pins. The OPA is preconfigured with a gain of '4' using the internal resistor ladder. This gain can be changed by writing a different value to the GSEL bits of OPA1CON1 in the function named "void OPA_NonInverting(void)" located in "application.c".
 
 | OPA    | Gain | Positive Input   | Output (OUT)  |
 | :----: | :--: | :--------------: | :-----------: |
@@ -108,7 +107,7 @@ In this configuration, the OPA is configured as a non-inverting programmable gai
 
 ### Configuration 4: Inverting PGA
 
-In this configuration, the OPA is configured as an inverting programmable gain amplifier (PGA) and used the internal resistor ladder built into the OPA module. The OPA is preconfigured with a gain of '3' using the internal resistor ladder. This gain can be changed by writing a different value to the GSEL bits of OPAxCON1 in the function named "void OPA_Inverting(void)" located in "application.c".
+In this configuration, the OPA is configured as an inverting programmable gain amplifier  and used the internal resistor ladder built into the OPA module. The OPA is preconfigured with a gain of '3' using the internal resistor ladder. This gain can be changed by writing a different value to the GSEL bits of OPAxCON1 in the function named "void OPA_Inverting(void)" located in "application.c".
 
 | OPA    | Gain | Positive Input   | Output (OUT)  |
 | :----: | :--: | :--------------: | :-----------: |
@@ -129,7 +128,7 @@ This shows channel 1 in configuration 3 (Non-Inverting Programmable Gain), and c
 
 <img src="images/DEMO-INTRO.png" width = "450"><br>
 
-This is the screen you will be met with in your terminal on start/reset.
+This is the screen in your terminal on start/reset.
 
 <img src="images/DEMO-PRESS.png" width = "450"><br>
 
