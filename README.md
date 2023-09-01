@@ -2,9 +2,9 @@
 
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Demo for PIC18F56Q71 Dual Operational Amplifier (Op Amp)
+# PIC18F56Q71 Dual Operational Amplifier (OPA) Demo
 
-This example shows the PIC18F56Q71 using two multi-configurable op amp modules. This project includes both op amp channels which is similar to the op amp demo on PIC18F16Q41.
+This code example demonstrates the utilization of two-multi configurable OPA modules integrated onto the PIC18F56Q71 microcontroller. This project leverages both OPA channels, similar to the Getting Started with OPA module on the [PIC18F16Q41](https://github.com/microchip-pic-avr-examples/pic18f16q41-cnano-opamp-demo-fw)
 
 
 
@@ -31,7 +31,7 @@ This example shows the PIC18F56Q71 using two multi-configurable op amp modules. 
 - Proto Click ([proto-click](https://www.mikroe.com/proto-click)) with modifications
 
 ## Setup
-In this example, PIC18F56Q71 is used as a microcontroller.
+In this example, the PIC18F56Q71 is used as the microcontroller.
 
 <img src="images/PIC18F56Q71-BOARD.png" width = "600"><br>
 
@@ -128,8 +128,8 @@ This shows channel 1 in configuration 3 (Non-Inverting Programmable Gain Amplifi
 
 <img src="images/DEMO-INTRO.png" width = "450"><br>
 
-This is the screen in your terminal on start/reset.
+The image above is the screen displayed in your chosen terminal upon startup or after a reset.
 
 <img src="images/DEMO-PRESS.png" width = "450"><br>
 
-What you will see after SW0 is released, depending on your configurations.
+The image above is what the terminal window will display after releasing SW0. The message will vary based on the configuration of the OPA.
