@@ -4,7 +4,7 @@
 
 # PIC18F56Q71 Dual Operational Amplifier (OPA) Demo
 
-This code example demonstrates the utilization of two-multi configurable OPA modules integrated onto the PIC18F56Q71 microcontroller. This project leverages both OPA channels, similar to the Getting Started with OPA module on the [PIC18F16Q41](https://github.com/microchip-pic-avr-examples/pic18f16q41-cnano-opamp-demo-fw)
+This code example demonstrates the usage of two multi-configurable OPA modules, integrated onto the PIC18F56Q71 microcontroller. This project leverages both OPA channels, similar to the Getting Started with OPA module on the [PIC18F16Q41](https://github.com/microchip-pic-avr-examples/pic18f16q41-cnano-opamp-demo-fw)
 
 
 
@@ -19,10 +19,10 @@ This code example demonstrates the utilization of two-multi configurable OPA mod
 
 ## Software Used
 
-  - [MPLAB® X IDE 6.10](http://www.microchip.com/mplab/mplab-x-ide) or newer
-  - [MPLAB® XC8 2.41](http://www.microchip.com/mplab/compilers) or a newer compiler
-  - [MPLAB® Code Configurator (MCC) 5.3.7](https://www.microchip.com/mplab/mplab-code-configurator) or newer
-  - [Microchip PIC18F-Q Series Device Support (1.20.405)](https://packs.download.microchip.com/) or newer
+  - [MPLAB® X IDE](http://www.microchip.com/mplab/mplab-x-ide) 6.10 or newer
+  - [MPLAB® XC8](http://www.microchip.com/mplab/compilers) 2.41 or a newer compiler
+  - [MPLAB® Code Configurator](https://www.microchip.com/mplab/mplab-code-configurator) (MCC) 5.3.7 or newer
+  - [Microchip PIC18F-Q Series Device Support](https://packs.download.microchip.com/) (1.20.405) or newer
 
 ## Hardware Used
 
@@ -52,7 +52,7 @@ A PROTO Click will be used to house the voltage potentiometers, status LEDs, log
 |:--------------------------------------------------:|:-------------------------------------------------:|
 |<img src="images/PROTO_FRONT.jpg" width = "250"><br>|<img src="images/PROTO_BACK.jpg" width = "250"><br>|
 
-This is the modified protoboard, which includes four potentiometers, four logic switches, two LEDs, and a reset button.
+This is the modified board, which includes four potentiometers, four logic switches, two LEDs, and a reset button.
 
 <img src="images/CBA_PROTO.jpg" width = "600"><br>
 
